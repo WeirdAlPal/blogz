@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>{{title}}</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav class="header">
+
+        <h1 class="title"><a href="/">Blogz!</a></h1>
+        <a href="/blog" class="blog">View All Posts</a>
+        <a href="/newpost"><i class="newpost" aria-hidden="true"></i> New Post</a>
+        <a href="/logout" class="right"><i class="sign-out"></i> Logout</a>
+        <a href="/login" class="right spacing"><i class="sign-in"></i> Login</a>
+
+      </nav>
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+
+</html>
